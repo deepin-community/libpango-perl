@@ -1,0 +1,36 @@
+Source: libpango-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: intrigeri <intrigeri@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+# do NOT add libgtk2-perl to build-deps (see bug #554704)
+Build-Depends: debhelper (>= 11),
+               perl,
+               libcairo-perl,
+               libextutils-depends-perl,
+               libextutils-pkgconfig-perl,
+               libglib-perl,
+               libpango1.0-dev,
+               xauth,
+               xfonts-base,
+               xvfb
+Standards-Version: 4.2.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libpango-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libpango-perl.git
+Homepage: http://gtk2-perl.sourceforge.net/
+
+Package: libpango-perl
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${perl:Depends},
+         libcairo-perl,
+         libglib-perl
+Description: Perl module to layout and render international text
+ Pango is a library for laying out and rendering text, with an emphasis on
+ internationalization. Pango can be used anywhere that text layout is needed,
+ but using Pango in conjunction with Cairo and/or Gtk2 provides a complete
+ solution with high quality text handling and graphics rendering.
+ .
+ This package provides the Perl bindings for the Pango library.

@@ -1,0 +1,209 @@
+libpango-perl (1.227-3) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>  Thu, 19 May 2022 10:22:10 +0800
+
+libpango-perl (1.227-3) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ intrigeri ]
+  * Bump debhelper compatibility level to 11.
+  * Declare compliance with Debian Policy 4.2.1.
+
+ -- intrigeri <intrigeri@debian.org>  Mon, 29 Oct 2018 20:02:20 +0000
+
+libpango-perl (1.227-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove Nathan Handler from Uploaders. Thanks for your work!
+  * Remove Ryan Niebur from Uploaders. Thanks for your work!
+
+  [ intrigeri ]
+  * Declare compliance with Standards-Version 4.0.0 (no change required).
+  * Bump debhelper compat level to 10, adjust build-dependencies accordingly.
+  * Bump packaging copyright years.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 24 Jun 2017 20:45:56 +0000
+
+libpango-perl (1.227-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ intrigeri ]
+  * Import new upstream release.
+  * Drop 0001-Ensure-word-separation-in-linker-arguments-with-pkg-.patch:
+    merged upstream.
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 07 Feb 2016 10:42:31 +0000
+
+libpango-perl (1.226-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ intrigeri ]
+  * Mark as autopkgtest-able.
+
+  [ gregor herrmann ]
+  * Refresh debian/patches/fix-manpages (offset).
+  * Add patch to work with pkg-config >= 0.29.
+    Thanks to Niko Tyni for the patch. (Closes: #805403)
+  * debian/copyright: update information about debian/*.
+  * Declare compliance with Debian Policy 3.9.6.
+  * debian/control: bump debhelper build dependency to 9.20120312~
+    (hardening flags).
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 21 Nov 2015 18:58:51 +0100
+
+libpango-perl (1.226-2) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ intrigeri ]
+  * Have ExtUtils::MakeMaker generate a Makefile that echoes all commands run,
+    so that blhc can do its job.
+  * Enable all hardening build flags.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 29 Aug 2014 14:43:43 -0700
+
+libpango-perl (1.226-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump copyright years.
+  * Declare compliance with standards version 3.9.5.
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 21 Feb 2014 10:40:33 +0100
+
+libpango-perl (1.224-2) unstable; urgency=low
+
+  [ Alessandro Ghedini ]
+  * Remove myself from Uploaders
+
+  [ intrigeri ]
+  * Upload to unstable.
+
+ -- intrigeri <intrigeri@debian.org>  Thu, 08 Aug 2013 23:36:33 +0200
+
+libpango-perl (1.224-1) experimental; urgency=low
+
+  [ Alessandro Ghedini ]
+  * Imported Upstream version 1.223
+    - Fix a test failure in t/PangoCairo.t
+  * Email change: Alessandro Ghedini -> ghedo@debian.org
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Nathan Handler ]
+  * Email change: Nathan Handler -> nhandler@debian.org
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ intrigeri ]
+  * Imported Upstream version 1.224
+    - Ignore MYMETA.*
+    - Hush a few compiler warnings
+    - Add gitweb link to old ChangeLog
+    - Created %meta_merge which follows v2 of CPAN Meta Spec
+    - %meta_merge is used for generating metadata via
+      ExtUtils::MakeMaker/CPAN::Meta
+  * Add myself to Uploaders.
+  * Bump dh compatibility level to 9 to get automatic hardening.
+  * Bump standards version to 3.9.4, no change required.
+  * Update link to machine-readable copyright format spec.
+  * Update debian/copyright field names and add proper contact information.
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 09 Feb 2013 14:24:05 +0100
+
+libpango-perl (1.222-1) unstable; urgency=low
+
+  [ Damyan Ivanov ]
+  * add -a option to xvfb-run invocation
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Alessandro Ghedini ]
+  * New upstream release
+  * Refresh patch
+  * Bump debhelper compat level to 8
+  * Re-order (Build-)Depends
+  * Rewrite long description
+  * Bump Standards-Version to 3.9.2 (no changes needed)
+  * Switch to 3.0 (quilt) format
+    - Remove quilt from Build-Depends, remove README.source
+  * Properly install upstream changelog
+  * Remove not needed versioned (Build-)Depends
+  * Update watch file
+  * Refresh and update debian/copyright
+  * Add myself to Uploaders
+  * Add some DEP3 headers to the patch
+
+ -- Alessandro Ghedini <al3xbio@gmail.com>  Mon, 08 Aug 2011 16:27:39 +0200
+
+libpango-perl (1.221-2) unstable; urgency=low
+
+  * Update ryan52's email address
+  * remove libgtk2-perl from build-deps (closes: #554704)
+
+ -- Ryan Niebur <ryan@debian.org>  Thu, 05 Nov 2009 18:20:40 -0800
+
+libpango-perl (1.221-1) unstable; urgency=low
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Changed: Replace versioned (build-)dependency on
+    perl (>= 5.6.0-{12,16}) with an unversioned dependency on perl (as
+    permitted by Debian Policy 3.8.3).
+
+  [ Nathan Handler ]
+  * New upstream release
+  * debian/control:
+    - Add myself to list of Uploaders
+    - Bump Standards-Version to 3.8.3
+    - Build-Depend on debhelper (>= 7.0.50) for override in debian/rules
+  * debian/copyright:
+    - Update upstream years
+    - Add myself to debian/* copyright
+  * debian/rules:
+    - Switch to short format
+  * debian/watch:
+    - Check cpan instead of sourceforge
+  * debian/patches/fix-manpages:
+    - Add header including URL to upstream bug report
+
+  [ gregor herrmann ]
+  * Refresh patch fix-manpages.
+  * Add libgtk2-perl to Build-Depends (additional tests.)
+
+ -- Nathan Handler <nhandler@ubuntu.com>  Thu, 27 Aug 2009 14:07:02 +0000
+
+libpango-perl (1.220-1) unstable; urgency=low
+
+  * New upstream release
+  * add README.source
+  * Debian policy 3.8.1
+  * fix extra space in short description
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Fri, 20 Mar 2009 07:17:08 -0700
+
+libpango-perl (1.211-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Sun, 08 Mar 2009 15:10:27 -0700
+
+libpango-perl (1.210-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #510025)
+
+ -- Ryan Niebur <ryanryan52@gmail.com>  Thu, 08 Jan 2009 23:58:06 -0800
